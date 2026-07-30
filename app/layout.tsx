@@ -5,10 +5,11 @@ export const metadata: Metadata = {
   title: "RISE 升昇电气 | 新能源与配电系统解决方案",
   description: "浙江升昇电气有限公司专注新能源配套、低压配电、储能控制与电能质量产品。",
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
-  metadataBase: new URL("https://www.rise-elec.com"),
+  metadataBase: new URL("https://pvrisele.com"),
   alternates: { canonical: "/" },
   openGraph: {
     type: "website",
+    url: "https://pvrisele.com/",
     siteName: "RISE 升昇电气",
     title: "RISE 升昇电气 | 让每一度电，更稳定地奔向未来。",
     description: "新能源配套与配电系统解决方案，来自浙江升昇电气。",
