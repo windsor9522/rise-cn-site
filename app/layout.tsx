@@ -25,8 +25,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     name: "浙江升昇电气有限公司",
     alternateName: "RISE 升昇电气",
     url: "https://rise-cn-site.gaob510.workers.dev",
-    email: "sales@rise-elec.com",
-    telephone: "+86 577 6278 8168",
+    email: "windsor2333@outlook.com",
+    telephone: "+86 13736929966",
+    contactPoint: { "@type": "ContactPoint", contactType: "sales", name: "陈经理", email: "windsor2333@outlook.com", telephone: "+86 13736929966", availableLanguage: ["zh-CN"] },
     address: { "@type": "PostalAddress", addressLocality: "乐清市", addressRegion: "浙江省", addressCountry: "CN" },
   };
   return <html lang="zh-CN"><body><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />{children}</body></html>;
