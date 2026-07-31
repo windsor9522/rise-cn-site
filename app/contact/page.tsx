@@ -1,3 +1,12 @@
 import { PageFrame } from "../components/site-chrome";
+import { Breadcrumbs } from "../components/breadcrumbs";
+import { InquiryForm } from "../components/inquiry-form";
+import type { Metadata } from "next";
 
-export default function ContactPage() { return <PageFrame><main className="inner-page"><section className="page-hero dark-page-hero"><div className="section-shell"><p className="eyebrow light">RISE / CONTACT</p><h1>从你的项目需求，<em>开始一次清晰沟通。</em></h1><p>留下产品方向、应用场景、数量与交期，我们会从最关键的技术问题开始。</p></div></section><section className="section-shell inner-section contact-layout"><div><p className="eyebrow">项目咨询</p><h2>把问题说清楚，<br /><span>下一步就会更明确。</span></h2><div className="contact-details"><a href="mailto:sales@rise-elec.com">sales@rise-elec.com</a><a href="tel:+8657762788168">+86 577 6278 8168</a><p>浙江省乐清市柳市镇<br />浙江升昇电气有限公司</p></div></div><form className="inquiry-form" action="mailto:sales@rise-elec.com" method="post" encType="text/plain"><label>您的姓名<input name="name" placeholder="请输入姓名" required /></label><label>联系电话<input name="phone" placeholder="请输入电话或微信" required /></label><label>项目方向<select name="type" defaultValue=""><option value="" disabled>请选择项目方向</option><option>新能源项目</option><option>低压成套配电</option><option>储能控制系统</option><option>电能质量治理</option><option>渠道与 OEM</option></select></label><label>项目需求<textarea name="message" rows={5} placeholder="请简单描述产品、数量、交期或现场情况" /></label><button className="button button-primary" type="submit">发送项目需求 <span aria-hidden="true">→</span></button></form></section></main></PageFrame>; }
+export const metadata: Metadata = {
+  title: "提交项目需求｜联系 RISE 升昇电气",
+  description: "联系浙江升昇电气，提交新能源、低压配电、储能控制或电能质量治理项目需求。",
+  alternates: { canonical: "/contact" },
+};
+
+export default function ContactPage() { return <PageFrame><main className="inner-page"><section className="page-hero dark-page-hero"><div className="section-shell"><p className="eyebrow light">RISE / CONTACT</p><h1>从你的项目需求，<em>开始一次清晰沟通。</em></h1><p>留下产品方向、应用场景、数量与交期，我们会从最关键的技术问题开始。</p></div></section><Breadcrumbs items={[{ name: "联系我们", href: "/contact" }]} /><section className="section-shell inner-section contact-layout"><div><p className="eyebrow">项目咨询</p><h2>把问题说清楚，<br /><span>下一步就会更明确。</span></h2><div className="contact-details"><a href="mailto:sales@rise-elec.com">sales@rise-elec.com</a><a href="tel:+8657762788168">+86 577 6278 8168</a><p>浙江省乐清市柳市镇<br />浙江升昇电气有限公司</p></div></div><InquiryForm /></section></main></PageFrame>; }
