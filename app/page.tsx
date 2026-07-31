@@ -94,7 +94,7 @@ export default function Home() {
       <section className="intro section-shell" id="about">
         <div className="section-mark">/ 01</div>
         <div className="intro-copy">
-          <p className="eyebrow">关于 RI​​SE</p>
+          <p className="eyebrow">关于 RISE</p>
           <h2>从一套设备，<br /><span>到一项长期合作。</span></h2>
         </div>
         <div className="intro-body">
