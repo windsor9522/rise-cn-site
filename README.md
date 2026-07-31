@@ -1,4 +1,4 @@
-# vinext-starter
+# RISE 升昇电气中文站
 
 A clean full-stack starter running on
 [vinext](https://github.com/cloudflare/vinext), with optional Cloudflare D1 and
@@ -16,7 +16,9 @@ npm run dev
 npm run build
 ```
 
-This starter does not use `wrangler.jsonc`.
+The Chinese RISE site is deployed as an independent Cloudflare Worker. GitHub
+stores the source, while `wrangler.jsonc` publishes the built Worker and its
+static assets. It is intentionally separate from the overseas NEUTRON site.
 
 ## Included Shape
 
@@ -91,6 +93,7 @@ actions tied to the current ChatGPT user. Leave public content anonymous.
 - `npm run build`: verify the vinext build output
 - `npm test`: build the starter and verify its rendered loading skeleton
 - `npm run db:generate`: generate Drizzle migrations after schema changes
+- `npm run deploy`: build and publish the RISE Worker
 
 ## Learn More
 
