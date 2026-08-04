@@ -63,22 +63,22 @@ export const products: Product[] = [
 ];
 
 export const solutions = [
-  { slug: "new-energy", index: "01", title: "新能源项目", desc: "光伏、储能、并网与新能源配套系统", detail: "从直流侧保护、汇流到储能控制，围绕新能源项目的安全连接与稳定运行组织产品。" },
-  { slug: "industrial", index: "02", title: "工业制造", desc: "工厂配电、动力负荷与电能质量治理", detail: "根据负荷特性、生产节奏与现场空间，协同低压配电和电能质量治理设备。" },
-  { slug: "engineering", index: "03", title: "工程建设", desc: "商业建筑、基础设施与 EPC 配套", detail: "为工程项目提供图纸理解、柜体配置、生产检验与交付协同支持。" },
-  { slug: "oem", index: "04", title: "渠道与 OEM", desc: "标准产品、定制组装与持续供货", detail: "围绕渠道伙伴和 OEM 项目，支持规格确认、批量协同与持续供货。" },
+  { slug: "new-energy", index: "01", title: "新能源项目", desc: "光伏、储能、并网与新能源配套系统", detail: "从直流侧保护、汇流到储能控制，围绕新能源项目的安全连接与稳定运行组织产品。", image: "/assets/generated/solution-new-energy-v3.webp" },
+  { slug: "industrial", index: "02", title: "工业制造", desc: "工厂配电、动力负荷与电能质量治理", detail: "根据负荷特性、生产节奏与现场空间，协同低压配电和电能质量治理设备。", image: "/assets/generated/solution-industrial-v3.webp" },
+  { slug: "engineering", index: "03", title: "工程建设", desc: "商业建筑、基础设施与 EPC 配套", detail: "为工程项目提供图纸理解、柜体配置、生产检验与交付协同支持。", image: "/assets/generated/solution-engineering-v3.webp" },
+  { slug: "oem", index: "04", title: "渠道与 OEM", desc: "标准产品、定制组装与持续供货", detail: "围绕渠道伙伴和 OEM 项目，支持规格确认、批量协同与持续供货。", image: "/assets/generated/solution-oem-v3.webp" },
 ];
 
 export const cases = [
-  { slug: "new-energy-demo", tag: "案例占位", title: "新能源配套项目", desc: "待补充真实项目背景、设备配置与交付结果。", image: "/assets/cases/new-energy-demo.png" },
-  { slug: "industrial-demo", tag: "案例占位", title: "工业配电改造", desc: "待补充现场工况、治理难点与方案成果。", image: "/assets/cases/industrial-demo.png" },
-  { slug: "engineering-demo", tag: "案例占位", title: "工程建设配套", desc: "待补充项目规模、交付节点与客户评价。", image: "/assets/cases/engineering-demo.png" },
+  { slug: "new-energy-demo", tag: "场景示意 · 待替换真实案例", title: "新能源配套项目", desc: "光伏屋顶与储能设备的项目场景示意，真实项目背景、设备配置与交付结果待补。", image: "/assets/generated/case-new-energy-v3.webp" },
+  { slug: "industrial-demo", tag: "场景示意 · 待替换真实案例", title: "工业配电改造", desc: "工厂低压配电改造的现场场景示意，真实工况、治理难点与方案成果待补。", image: "/assets/generated/case-industrial-v3.webp" },
+  { slug: "engineering-demo", tag: "场景示意 · 待替换真实案例", title: "工程建设配套", desc: "商业建筑配电房的项目场景示意，真实项目规模、交付节点与客户评价待补。", image: "/assets/generated/case-engineering-v3.webp" },
 ];
 
 export const news = [
-  { slug: "site-upgrade", category: "企业动态", date: "2026.07", title: "RISE 中文站启动多页面企业站升级", excerpt: "围绕产品、方案、案例与信任资产，建立更清晰的中文站信息架构。" },
-  { slug: "power-quality-basics", category: "技术干货", date: "待发布", title: "电能质量治理项目，前期需要确认哪些信息？", excerpt: "从负荷类型、运行工况和现场数据开始，减少后期方案变更。" },
-  { slug: "pv-protection", category: "行业资讯", date: "待发布", title: "光伏配套设备中的直流侧保护要点", excerpt: "围绕汇流、保护、监测与并网接口梳理基础选型信息。" },
+  { slug: "site-upgrade", category: "企业动态", date: "2026.08", title: "RISE 中文站启动多页面企业站升级", excerpt: "围绕产品、方案、案例与信任资产，建立更清晰的中文站信息架构。", image: "/assets/generated/news-enterprise-v3.webp" },
+  { slug: "power-quality-basics", category: "技术干货", date: "待发布", title: "电能质量治理项目，前期需要确认哪些信息？", excerpt: "从负荷类型、运行工况和现场数据开始，减少后期方案变更。", image: "/assets/generated/news-power-quality-v3.webp" },
+  { slug: "pv-protection", category: "行业资讯", date: "待发布", title: "光伏配套设备中的直流侧保护要点", excerpt: "围绕汇流、保护、监测与并网接口梳理基础选型信息。", image: "/assets/generated/news-pv-v3.webp" },
 ];
 
 export const trustItems = ["真实资质待补", "生产实力待补", "产品参数可追溯", "项目协同响应"];

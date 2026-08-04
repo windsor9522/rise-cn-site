@@ -297,3 +297,21 @@ h2 span { color:#789084; font-family:var(--serif); font-weight:400; }
 .factory-placeholder > img { inset:0; position:absolute; }
 .factory-placeholder > span { position:relative; z-index:1; }
 @media (max-width:620px) { .detail-card-image { height:160px; margin:-32px -32px 24px; } .breadcrumbs { padding-left:22px; padding-right:22px; } }
+
+/* v3 content visuals and responsive editorial layouts */
+.solution-row { grid-template-columns:120px 60px 1fr 130px; }
+.solution-row-image { height:82px; overflow:hidden; }
+.solution-row-image img { display:block; height:100%; object-fit:cover; width:100%; }
+.detail-page-image { border-radius:2px; margin-top:38px; max-width:920px; overflow:hidden; }
+.detail-page-image img { display:block; max-height:430px; object-fit:cover; width:100%; }
+.news-row { grid-template-columns:120px 90px 1fr 30px; }
+.news-row-image { height:70px; overflow:hidden; }
+.news-row-image img { display:block; height:100%; object-fit:cover; width:100%; }
+.contact-image { margin-bottom:34px; max-width:560px; overflow:hidden; }
+.contact-image img { display:block; max-height:300px; object-fit:cover; width:100%; }
+.scenario { grid-template-columns:64px 34px 1fr 20px; }
+.scenario-image { grid-column:1 / -1; height:150px; margin-bottom:18px; overflow:hidden; }
+.scenario-image img { display:block; height:100%; object-fit:cover; transition:transform .3s ease; width:100%; }
+.scenario:hover .scenario-image img { transform:scale(1.04); }
+@media (max-width:900px) { .solution-row { grid-template-columns:100px 45px 1fr 90px; } .news-row { grid-template-columns:100px 75px 1fr 25px; } }
+@media (max-width:620px) { .solution-row { gap:14px; grid-template-columns:78px 28px 1fr; } .solution-row-image { height:68px; grid-row:span 2; } .solution-row b { grid-column:3; } .news-row { gap:12px; grid-template-columns:76px 58px 1fr 18px; } .news-row-image { height:58px; } .scenario { grid-template-columns:34px 1fr 18px; } .scenario-image { height:120px; } .detail-page-image { margin-top:26px; } .detail-page-image img { max-height:300px; } .contact-image { margin-bottom:26px; } }
